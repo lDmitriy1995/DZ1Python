@@ -1,12 +1,12 @@
 class MenuItem:
-    def init(self, id, name, parent_id):
+    def __init__(self, id, name, parent_id):
         self.id = id
         self.name = name
         self.parent_id = parent_id
         self.children = []
 
 class MenuBuilder:
-    def init(self, path):
+    def __init__(self, path):
         self.menu_items = self.load_menu_items(path)
         self.menu = self.build_menu()
 
